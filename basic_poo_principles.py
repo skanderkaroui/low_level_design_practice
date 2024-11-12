@@ -21,3 +21,6 @@ try:
     print(account.__acount_number)
 except AttributeError as e:
     print("Attribute Error", e)
+
+account.deposit(500)
+print("Balance after deposit:", account.get_balance())
